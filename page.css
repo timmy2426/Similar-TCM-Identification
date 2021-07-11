@@ -84,3 +84,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+/* responsive */
+@media screen and (max-width: 576px) {
+  .handout {
+    margin: 0 3em 5em;
+  }
+}
