@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&display=swap");
+/* reset & basics */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: Tinos, "Hiragino Mincho ProN", "Source Han Serif",
+    "Source Han Serif TC", "Noto Serif CJK", "Noto Serif TC", "Noto Serif SC",
+    Songti, "LiSong Pro", "Apple LiSung", 新細明體, 新细明体, PMingLiU, 細明體,
+    细明体, MingLiU, HanaMinA, HanaMinB, HanaMinC, Jomolhari, serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+h1 {
+  font-size: 80px;
+  margin-bottom: 25px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+/* header */
+.banner-thumbnail-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 5em 0;
+  margin: 0 0 5em;
+}
+.banner-thumbnail-wrapper img {
+  position: absolute;
+  top: -50em;
+  left: -30em;
+  filter: brightness(50%);
+}
+.desc-wrapper {
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.desc-wrapper h1 {
+  color: white;
+}
+.desc-button > a {
+  display: inline-block;
+  padding: 1em 1.75em;
+  margin: 1em 2em;
+  color: white;
+  border: 2px solid white;
+  border-radius: 300px;
+  font-size: 1em;
+}
+/* main */
+.wrap {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.item {
+  width: 30%;
+  margin: 0 auto 5em;
+  text-align: center;
+  border: 1px solid gray;
+}
+.item a {
+  color: black;
+}
+.item img {
+  width: 100%;
+}
+.item .txt {
+  width: auto;
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
+.item h2 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.4em;
+  font-weight: 700;
+}
+.item p {
+  font-weight: 300;
+}
+/* footer */
+#copy-right {
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+#copy-right img {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#copy-right a {
+  color: white;
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  .item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item {
+    width: 70%;
+  }
+}

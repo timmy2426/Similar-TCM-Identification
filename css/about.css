@@ -1,0 +1,20 @@
+/* main */
+.about {
+  margin: 0 15em 2em;
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .about {
+    margin: 0 10em 2em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    margin: 0 5em 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about {
+    margin: 0 3em 2em;
+  }
+}
