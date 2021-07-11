@@ -23,6 +23,7 @@ h2 {
 }
 p {
   font-size: 16px;
+  margin-bottom: 15px;
 }
 a {
   text-decoration: none;
@@ -65,11 +66,11 @@ a {
 .wrap {
   display: flex;
   width: 1200px;
-  margin: 0 auto 5em;
+  margin: 0 auto;
 }
 .item {
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto 5em;
   text-align: center;
   border: 1px solid gray;
 }
@@ -95,17 +96,17 @@ a {
   background-color: white;
 }
 /* footer */
-.copy-right {
+#copy-right {
   background-color: black;
   color: white;
   padding: 30px 0;
   text-align: center;
 }
-.copy-right img {
+#copy-right img {
   border: 1px solid white;
   border-radius: 5px;
 }
-.copy-right a {
+#copy-right a {
   color: white;
 }
 /* responsive */
@@ -113,11 +114,9 @@ a {
   .wrap {
     flex-direction: column;
     width: 100%;
-    margin: 0 auto;
   }
   .item {
     width: 50%;
-    margin: 0 auto 5em;
   }
 }
 @media screen and (max-width: 767px) {
