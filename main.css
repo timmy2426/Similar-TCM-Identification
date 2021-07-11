@@ -80,6 +80,12 @@ a {
 .item img {
   width: 100%;
 }
+.item .txt {
+  width: auto;
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
 .item h2 {
   border-bottom: 1px solid gray;
   padding-bottom: 0.3em;
@@ -88,12 +94,6 @@ a {
 }
 .item p {
   font-weight: 300;
-}
-.item .txt {
-  width: auto;
-  position: relative;
-  padding: 20px;
-  background-color: white;
 }
 /* footer */
 #copy-right {

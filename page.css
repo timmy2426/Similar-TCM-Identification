@@ -4,7 +4,7 @@
 }
 /* main */
 .handout {
-  margin: 0 5em 5em;
+  margin: 0 15em 5em;
 }
 .handout ol {
   margin-bottom: 15px;
@@ -12,6 +12,13 @@
 .handout li {
   list-style-type: decimal;
   list-style-position: inside;
+}
+.handout .pic {
+  text-align: center;
+}
+.handout .pic img {
+  width: 100%;
+  margin-bottom: 20px;
 }
 /* button */
 .turn-page-button {
@@ -85,6 +92,16 @@
   justify-content: center;
 }
 /* responsive */
+@media screen and (max-width: 1200px) {
+  .handout {
+    margin: 0 10em 5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .handout {
+    margin: 0 5em 5em;
+  }
+}
 @media screen and (max-width: 576px) {
   .handout {
     margin: 0 3em 5em;
