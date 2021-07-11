@@ -4,7 +4,7 @@
 }
 /* main */
 .handout {
-  margin: 0 15em 5em;
+  margin: 0 15em 2em;
 }
 .handout ol {
   margin-bottom: 15px;
@@ -19,6 +19,12 @@
 .handout .pic img {
   width: 100%;
   margin-bottom: 20px;
+}
+p.page-number {
+  margin: 35px 0 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #999;
 }
 /* button */
 .turn-page-button {
@@ -94,16 +100,16 @@
 /* responsive */
 @media screen and (max-width: 1200px) {
   .handout {
-    margin: 0 10em 5em;
+    margin: 0 10em 2em;
   }
 }
 @media screen and (max-width: 767px) {
   .handout {
-    margin: 0 5em 5em;
+    margin: 0 5em 2em;
   }
 }
 @media screen and (max-width: 576px) {
   .handout {
-    margin: 0 3em 5em;
+    margin: 0 3em 2em;
   }
 }
