@@ -2,6 +2,9 @@
 .about {
   margin: 0 15em 2em;
 }
+.about img {
+  width: 100%;
+}
 /* responsive */
 @media screen and (max-width: 1200px) {
   .about {
