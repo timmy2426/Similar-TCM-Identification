@@ -1,3 +1,6 @@
+v1.2.2
+contents pc two-col
+
 v1.2.1
 contents.html refactor
 
