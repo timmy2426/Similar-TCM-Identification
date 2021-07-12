@@ -21,7 +21,7 @@
   margin-bottom: 20px;
 }
 .handout .txt a {
-  color: black;
+  color: inherit;
 }
 p.page-number {
   margin: 35px 0 0;
