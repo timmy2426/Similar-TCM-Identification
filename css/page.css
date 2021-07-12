@@ -20,6 +20,9 @@
   width: 100%;
   margin-bottom: 20px;
 }
+.handout .txt a {
+  color: black;
+}
 p.page-number {
   margin: 35px 0 0;
   text-align: center;
