@@ -20,7 +20,14 @@
   width: 100%;
   margin-bottom: 20px;
 }
-.handout .txt a {
+.handout .txt h2 {
+  text-align: center;
+}
+.contents-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.contents-col a {
   color: black;
 }
 p.page-number {
@@ -38,6 +45,9 @@ p.page-number {
 @media screen and (max-width: 767px) {
   .handout {
     margin: 0 5em 2em;
+  }
+  .contents-wrap {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 576px) {
