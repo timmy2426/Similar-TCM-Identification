@@ -1,3 +1,6 @@
+v1.2.4
+contents.html og:url update
+
 v1.2.3
 page's img margin-bottom update
 
