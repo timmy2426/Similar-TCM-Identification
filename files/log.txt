@@ -1,0 +1,14 @@
+v1.2.1
+contents.html refactor
+
+v1.2.0
+add contents
+
+v1.1.0
+add Google Analytics and Open Graph
+
+v1.0.1
+image compressed
+
+v1.0.0 
+init
