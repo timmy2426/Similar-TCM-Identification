@@ -10,11 +10,11 @@ This is a laboratory for learning and applying new technologies. Every time I le
 
 ## 導入技術 Import Technology
 
-- v1.3.0 用 Sass 重構 Css  
-  v1.3.0 Reconstructing Css with Sass
+- 用 Sass 重構 Css  
+  Reconstructing Css with Sass
 
-- v1.1.0 加入 Google 分析 & 開放社交關係圖  
-  v1.1.0 Add Google Analytics & Open Graph
+- 加入 Google 分析 & 開放社交關係圖  
+  Add Google Analytics & Open Graph
 
 ## 發行註記 Release Notes
 
