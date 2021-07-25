@@ -1,0 +1,19 @@
+@import "rwd";
+@import "button";
+
+/* main */
+.about {
+  margin: 0 15em 2em;
+  @include breakpoint(pc) {
+    margin: 0 10em 2em;
+  }
+  @include breakpoint(pad) {
+    margin: 0 5em 2em;
+  }
+  @include breakpoint(mobile) {
+    margin: 0 3em 2em;
+  }
+  > img {
+    width: 100%;
+  }
+}

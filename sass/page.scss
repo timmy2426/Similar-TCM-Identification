@@ -1,0 +1,53 @@
+@import "rwd";
+@import "button";
+
+/* header */
+.banner-thumbnail-wrapper {
+  padding: 3em 0;
+}
+/* main */
+.handout {
+  margin: 0 15em 2em;
+  @include breakpoint(pc) {
+    margin: 0 10em 2em;
+  }
+  @include breakpoint(pad) {
+    margin: 0 5em 2em;
+  }
+  @include breakpoint(mobile) {
+    margin: 0 3em 2em;
+  }
+  ol {
+    margin-bottom: 15px;
+    > li {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+  }
+  > .pic {
+    text-align: center;
+    > img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  > .txt > h2 {
+    text-align: center;
+  }
+  > .contents-wrap {
+    display: flex;
+    justify-content: space-around;
+    @include breakpoint(pad) {
+      flex-direction: column;
+    }
+    > .contents-col a {
+      color: black;
+    }
+  }
+}
+p.page-number {
+  margin: 35px 0 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #999;
+}

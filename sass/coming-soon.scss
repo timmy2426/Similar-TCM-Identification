@@ -1,0 +1,28 @@
+@import "rwd";
+@import "button";
+
+.wrap {
+  @include breakpoint(pc) {
+    flex-direction: row;
+  }
+}
+
+.coming-soon {
+  width: 100%;
+  text-align: center;
+  margin: 0 3em 5em;
+  > img {
+    width: 50%;
+    @include breakpoint(pad) {
+      width: 75%;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+  }
+  > p {
+    margin-top: 20px;
+    font-size: 72px;
+    font-weight: 400;
+  }
+}

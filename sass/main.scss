@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&display=swap");
+@import "rwd";
+
+$BaseSize: 12px;
+$SizeLevel: 4px;
+$BrightColor: white;
+$DarkColor: black;
+$Grayscale: gray;
+
+@mixin font($Level) {
+  $FontSize: $BaseSize + $SizeLevel * round($Level);
+  font-size: $FontSize;
+  @if $FontSize > 32px {
+    margin-bottom: 25px;
+  } @else {
+    @if $FontSize < 24px {
+      margin-bottom: 15px;
+    } @else {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* reset & basics */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: Tinos, "Hiragino Mincho ProN", "Source Han Serif",
+    "Source Han Serif TC", "Noto Serif CJK", "Noto Serif TC", "Noto Serif SC",
+    Songti, "LiSong Pro", "Apple LiSung", 新細明體, 新细明体, PMingLiU, 細明體,
+    细明体, MingLiU, HanaMinA, HanaMinB, HanaMinC, Jomolhari, serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+h1 {
+  @include font(17);
+}
+h2 {
+  @include font(3);
+}
+p {
+  @include font(1);
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+/* header */
+.banner-thumbnail-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 5em 0;
+  margin: 0 0 5em;
+  > img {
+    position: absolute;
+    top: -50em;
+    left: -30em;
+    filter: brightness(50%);
+  }
+  > .desc-wrapper {
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    > h1 {
+      color: $BrightColor;
+    }
+    > .desc-button > a {
+      display: inline-block;
+      padding: 1em 1.75em;
+      margin: 1em 2em;
+      color: $BrightColor;
+      border: 2px solid $BrightColor;
+      border-radius: 300px;
+      font-size: 1em;
+    }
+  }
+}
+/* main */
+.wrap {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  @include breakpoint(pc) {
+    flex-direction: column;
+    width: 100%;
+  }
+  > .item {
+    width: 30%;
+    margin: 0 auto 5em;
+    text-align: center;
+    border: 1px solid $Grayscale;
+    @include breakpoint(pc) {
+      width: 50%;
+    }
+    @include breakpoint(pad) {
+      width: 70%;
+    }
+    > a {
+      color: $DarkColor;
+      > img {
+        width: 100%;
+      }
+      > .txt {
+        width: auto;
+        position: relative;
+        padding: 20px;
+        background-color: $BrightColor;
+        > h2 {
+          border-bottom: 1px solid $Grayscale;
+          padding-bottom: 0.3em;
+          margin-bottom: 0.4em;
+          font-weight: 700;
+        }
+        > p {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+/* footer */
+#copy-right {
+  background-color: $DarkColor;
+  color: $BrightColor;
+  padding: 30px 0;
+  text-align: center;
+  > a {
+    color: $BrightColor;
+    > img {
+      border: 1px solid $BrightColor;
+      border-radius: 5px;
+    }
+  }
+}
