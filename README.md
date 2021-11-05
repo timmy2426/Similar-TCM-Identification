@@ -10,6 +10,9 @@ This is a laboratory for learning and applying new technologies. Every time I le
 
 ## 導入技術 Import Technology
 
+- 用 JavaScript 製作評量測驗頁面  
+  Create evaluation test pages with JavaScript
+
 - 用 Sass 重構 Css  
   Reconstructing Css with Sass
 
@@ -17,6 +20,9 @@ This is a laboratory for learning and applying new technologies. Every time I le
   Add Google Analytics & Open Graph
 
 ## 發行註記 Release Notes
+
+- v2.0.0 評量測驗頁面上線  
+  v2.0.0 Evaluation test page online
 
 - v1.3.0 用 Sass 重構 Css  
   v1.3.0 Refactoring Css with Sass

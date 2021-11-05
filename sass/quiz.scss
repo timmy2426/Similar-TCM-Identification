@@ -1,0 +1,79 @@
+@import "rwd";
+@import "button";
+
+/* header */
+.banner-thumbnail-wrapper {
+  padding: 3em 0;
+}
+/* main */
+div {
+  box-sizing: border-box;
+}
+.wrap {
+  display: block;
+}
+.control {
+  display: none;
+  text-align: center;
+  margin: 50px;
+  > h2 {
+    font-size: 36px;
+  }
+  > button {
+    margin: 0 50px;
+  }
+}
+.control.show {
+  display: block;
+}
+.quiz {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.test {
+  width: 50%;
+  margin: 20px 0;
+  @include breakpoint(pad) {
+    width: 100%;
+  }
+  > h2 {
+    margin: 0 20px;
+  }
+  > .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    > .question {
+      width: 50%;
+      padding: 20px;
+      @include breakpoint(pad) {
+        width: 100%;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+    > .answer {
+      width: 50%;
+      padding: 20px;
+      @include breakpoint(pad) {
+        width: 100%;
+      }
+      > .options {
+        margin: 10px;
+      }
+      > p {
+        display: none;
+        margin: 40px 20px 20px;
+      }
+      > p.show {
+        display: block;
+        > .solution.wrong {
+          color: #ea0000;
+        }
+      }
+    }
+  }
+}
