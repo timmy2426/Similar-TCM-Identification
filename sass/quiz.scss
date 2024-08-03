@@ -6,6 +6,10 @@
   padding: 3em 0;
 }
 /* main */
+input,
+label {
+  cursor: pointer;
+}
 div {
   box-sizing: border-box;
 }
@@ -30,10 +34,19 @@ div {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  @include breakpoint(pad) {
+    margin: 0 15%;
+  }
+  @include breakpoint(mobile) {
+    margin: 0 10%;
+  }
 }
 .test {
   width: 50%;
   margin: 20px 0;
+  img {
+    max-width: 300px;
+  }
   @include breakpoint(pad) {
     width: 100%;
   }
@@ -74,6 +87,35 @@ div {
           color: #ea0000;
         }
       }
+    }
+  }
+}
+.test.picture {
+  width: 100%;
+  > p {
+    font-size: 20px;
+    margin: 0 20px;
+  }
+  > .answer.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    .options {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      img {
+        width: 200px;
+      }
+    }
+    .solution {
+      margin: 10px;
+    }
+    .solution.wrong {
+      color: #ea0000;
+    }
+    > input {
+      text-align: center;
     }
   }
 }

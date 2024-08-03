@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
 @import "rwd";
 
 $BaseSize: 12px;
@@ -28,20 +28,24 @@ $Grayscale: gray;
   list-style: none;
 }
 body {
-  font-family: Tinos, "Hiragino Mincho ProN", "Source Han Serif",
-    "Source Han Serif TC", "Noto Serif CJK", "Noto Serif TC", "Noto Serif SC",
-    Songti, "LiSong Pro", "Apple LiSung", 新細明體, 新细明体, PMingLiU, 細明體,
-    细明体, MingLiU, HanaMinA, HanaMinB, HanaMinC, Jomolhari, serif;
+  font-family: "Noto Sana TC", sans-serif;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
 h1 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
   @include font(17);
 }
 h2 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
   @include font(3);
 }
 p {
+  font-family: "Noto Sana TC", sans-serif;
+  font-weight: 400;
   @include font(1);
 }
 a {
@@ -95,6 +99,7 @@ a {
     margin: 0 auto 5em;
     text-align: center;
     border: 1px solid $Grayscale;
+    transition: transform 0.3s ease;
     @include breakpoint(pc) {
       width: 50%;
     }
@@ -115,13 +120,12 @@ a {
           border-bottom: 1px solid $Grayscale;
           padding-bottom: 0.3em;
           margin-bottom: 0.4em;
-          font-weight: 700;
-        }
-        > p {
-          font-weight: 300;
         }
       }
     }
+  }
+  > .item:hover {
+    transform: scale(1.1);
   }
 }
 /* footer */

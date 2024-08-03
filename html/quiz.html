@@ -2,60 +2,79 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>評量測驗</title>
-    <meta name="description" content="牛刀小試，學以致用。">
-    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../dist/style/main.min.css">
-    <link rel="stylesheet" href="../dist/style/quiz.min.css">
-    <script src="../dist/js/quiz.min.js"></script>
-    <script src="../dist/js/testbank.min.js"></script>
-    <!-- Open Graph -->
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="評量測驗" />
-    <meta property="og:description" content="牛刀小試，學以致用。" />
-    <meta property="og:image" content="https://vinaya.blog/similar-tcm-identification/images/tcm/handout-cover.png" />
-    <meta property="og:url" content="https://vinaya.blog/similar-tcm-identification/html/quiz.html" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29HZZF2BCE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>評量測驗</title>
+  <meta name="description" content="牛刀小試，學以致用。">
+  <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../dist/style/main.min.css">
+  <link rel="stylesheet" href="../dist/style/page.min.css">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="評量測驗" />
+  <meta property="og:description" content="牛刀小試，學以致用。" />
+  <meta property="og:image" content="https://vinaya.blog/similar-tcm-identification/images/tcm/handout-cover.png" />
+  <meta property="og:url" content="https://vinaya.blog/similar-tcm-identification/html/quiz.html" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-29HZZF2BCE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-29HZZF2BCE');
-    </script>
+    gtag('config', 'G-29HZZF2BCE');
+  </script>
 </head>
 
 <body>
-    <header>
-        <div class="banner-thumbnail-wrapper">
-            <img src="../images/cover-image.png" alt="">
-            <div class="desc-wrapper">
-                <h1>評量測驗</h1>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="wrap">
-            <div class="control">
-                <h2 class="score">您的得分為：<span class="num"></span> 分</h2>
-                <button id="newQuiz" class="turn-page-button">再考一次</button>
-            </div>
-            <div class="quiz"></div>
-        </div>
-    </main>
-    <footer>
-        <div id="turn-page">
-            <button id="send" class="turn-page-button">交卷</button>
-            <a href="../index.html" id="home-page">
-                <button class="turn-page-button">回首頁</button></a>
-        </div>
-        <div id="copy-right">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="創用 CC 授權條款" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC 姓名標示-非商業性-禁止改作 4.0 國際 授權條款</a>授權
-        </div>
-    </footer>
+  <header>
+    <div class="banner-thumbnail-wrapper">
+      <img src="../images/cover-image.png">
+      <div class="desc-wrapper">
+        <h1>評量測驗</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <div class="item">
+        <a href="./basic-tests.html">
+          <img src="../images/item04.jpg">
+          <div class="txt">
+            <h2>基本測驗</h2>
+            <p>將本網站所介紹的92種相似藥材打散，隨機選取4種合成一題；題型為單選題，題幹為圖片，共25題。因沒有按照易混淆分組出題，故易用刪去法得出正確答案。</p>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a href="./advanced-tests.html">
+          <img src="../images/item05.jpg">
+          <div class="txt">
+            <h2>進階測驗</h2>
+            <p>依照本網站所列40組易混淆藥材，先根據藥用部位分為不同題庫，再從不同題庫取一至兩組藥材合成一題；題型為單選題，題幹為圖片，共25題。每題選項與題幹圖片的相關性高，稍具挑戰性。</p>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a href="./difficult-tests.html">
+          <img src="../images/item06.jpg">
+          <div class="txt">
+            <h2>困難測驗</h2>
+            <p>依照本網站所列40組易混淆藥材，先根據藥用部位分為不同題庫，再從不同題庫取一至兩組藥材合成一題；題型為單選題，題幹分為圖片與藥材名稱兩種，共25題。考驗作答者對於藥材名稱與藥材樣貌雙向連結的熟悉度，難度最高。</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="turn-page">
+      <a href="../index.html" id="home-page">
+        <button class="turn-page-button">回首頁</button></a>
+    </div>
+    <div id="copy-right">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="創用 CC 授權條款" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC 姓名標示-非商業性-禁止改作 4.0 國際 授權條款</a>授權
+    </div>
+  </footer>
 </body>
 
 </html>

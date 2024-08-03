@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
 /* reset & basics */
 * {
   margin: 0;
@@ -8,22 +7,29 @@
 }
 
 body {
-  font-family: Tinos, "Hiragino Mincho ProN", "Source Han Serif", "Source Han Serif TC", "Noto Serif CJK", "Noto Serif TC", "Noto Serif SC", Songti, "LiSong Pro", "Apple LiSung", 新細明體, 新细明体, PMingLiU, 細明體, 细明体, MingLiU, HanaMinA, HanaMinB, HanaMinC, Jomolhari, serif;
+  font-family: "Noto Sana TC", sans-serif;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
 
 h1 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
   font-size: 80px;
   margin-bottom: 25px;
 }
 
 h2 {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 p {
+  font-family: "Noto Sana TC", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   margin-bottom: 15px;
 }
@@ -41,7 +47,6 @@ a {
   padding: 5em 0;
   margin: 0 0 5em;
 }
-
 .banner-thumbnail-wrapper > img {
   position: absolute;
   top: -50em;
@@ -49,7 +54,6 @@ a {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
-
 .banner-thumbnail-wrapper > .desc-wrapper {
   z-index: 100;
   position: relative;
@@ -58,11 +62,9 @@ a {
           box-sizing: border-box;
   text-align: center;
 }
-
 .banner-thumbnail-wrapper > .desc-wrapper > h1 {
   color: white;
 }
-
 .banner-thumbnail-wrapper > .desc-wrapper > .desc-button > a {
   display: inline-block;
   padding: 1em 1.75em;
@@ -81,7 +83,6 @@ a {
   width: 1200px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 1200px) {
   .wrap {
     -webkit-box-orient: vertical;
@@ -91,50 +92,47 @@ a {
     width: 100%;
   }
 }
-
 .wrap > .item {
   width: 30%;
   margin: 0 auto 5em;
   text-align: center;
   border: 1px solid gray;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-
 @media screen and (max-width: 1200px) {
   .wrap > .item {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .wrap > .item {
     width: 70%;
   }
 }
-
 .wrap > .item > a {
   color: black;
 }
-
 .wrap > .item > a > img {
   width: 100%;
 }
-
 .wrap > .item > a > .txt {
   width: auto;
   position: relative;
   padding: 20px;
   background-color: white;
 }
-
 .wrap > .item > a > .txt > h2 {
   border-bottom: 1px solid gray;
   padding-bottom: 0.3em;
   margin-bottom: 0.4em;
-  font-weight: 700;
 }
-
-.wrap > .item > a > .txt > p {
-  font-weight: 300;
+.wrap > .item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* footer */
@@ -144,11 +142,9 @@ a {
   padding: 30px 0;
   text-align: center;
 }
-
 #copy-right > a {
   color: white;
 }
-
 #copy-right > a > img {
   border: 1px solid white;
   border-radius: 5px;
