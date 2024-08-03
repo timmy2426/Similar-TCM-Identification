@@ -22,7 +22,7 @@ This is a laboratory for learning and applying new technologies. Every time I le
 ## 發行註記 Release Notes
 
 - v2.1.0 評量測驗頁面大改版，新增額外兩種測驗難度  
-  v2.0.0 Evaluation test page has been revamped to include two additional levels of difficulty.
+  v2.1.0 Evaluation test page has been revamped to include two additional levels of difficulty
 
 - v2.0.0 評量測驗頁面上線  
   v2.0.0 Evaluation test page online
