@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#send").addEventListener("click", (e) => {
     let obj = document.querySelectorAll(".test");
     let grade = 0;
-    answer = [];
     document.querySelector(".control").classList.add("show");
+
     obj.forEach((e) => {
       let ans = 0;
       let input = e.querySelectorAll("input");

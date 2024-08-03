@@ -1,7 +1,7 @@
 # 相似藥材辨識 Similar-TCM-Identification
 
-根據我做的講義，轉成[互動式網站](https://similartcm.tadralling.com/)。  
-Based on the handout I made, it was converted into an [interactive website](https://similartcm.tadralling.com/).
+根據我做的講義，轉成[互動式網站](https://vinaya.blog/website-projects-library/similar-tcm-identification/index.html)。  
+Based on the handout I made, it was converted into an [interactive website](https://vinaya.blog/website-projects-library/similar-tcm-identification/index.html).
 
 ## 專案目標 Project Objectives
 
@@ -20,6 +20,9 @@ This is a laboratory for learning and applying new technologies. Every time I le
   Add Google Analytics & Open Graph
 
 ## 發行註記 Release Notes
+
+- v2.1.0 評量測驗頁面大改版，新增額外兩種測驗難度  
+  v2.0.0 Evaluation test page has been revamped to include two additional levels of difficulty.
 
 - v2.0.0 評量測驗頁面上線  
   v2.0.0 Evaluation test page online
