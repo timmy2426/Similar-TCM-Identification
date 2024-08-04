@@ -6,6 +6,15 @@
   padding: 3em 0;
 }
 /* main */
+main {
+  padding: 0 30px;
+  @include breakpoint(pad) {
+    padding: 0 20px;
+  }
+  @include breakpoint(mobile) {
+    padding: 0 10px;
+  }
+}
 input,
 label {
   cursor: pointer;
@@ -33,12 +42,12 @@ div {
 .quiz {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 30px;
   @include breakpoint(pad) {
-    margin: 0 15%;
+    margin: 0 20px;
   }
   @include breakpoint(mobile) {
-    margin: 0 10%;
+    margin: 0 10px;
   }
 }
 .test {
